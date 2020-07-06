@@ -1,12 +1,14 @@
 import React from 'react';
+import Competition from '../Competition/Competition';
+import Match from '../Match/Match';
 
 const Contains = ({display}) => {
 
     return (
         <>
             <div className="contain">
-                <Competion display={display.competition}/>
-                <Match display={display.match}/>
+                {display.competition ? <Competition /> : null}
+                {display.match ? <Match /> : null} 
             </div>
         </>
     )
