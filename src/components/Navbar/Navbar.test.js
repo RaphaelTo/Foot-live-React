@@ -11,15 +11,14 @@ it('renders component NavBar' , () => {
 it('renders a 4 li', () => {
     const { getByTestId } = render(<NavBar />); 
     const numberElementChild = getByTestId('ulValue').childElementCount; 
-    expect(numberElementChild).toBe(4);
+    expect(numberElementChild).toBe(2);
 })
 
 it('each li get function', () => {
     const { getByTestId } = render(<NavBar />)
 
-    for(let i = 0; i <= 4; i++ ){
+    for(let i = 0; i < 2; i++ ){
         let getFunctionInChild = getByTestId('ulValue').children.item(i);
-        let haveFunction = fireEvent.click(getFunctionInChild); 
+        fireEvent.click(getFunctionInChild) 
     }
-
 })
