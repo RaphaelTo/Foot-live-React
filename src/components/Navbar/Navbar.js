@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Navbar.css';
 
 const NavBar = () => {
 
@@ -13,7 +14,7 @@ const NavBar = () => {
     return (
         <>
             <header>
-                <nav>
+                <nav className="navbar-menu">
                     <ul data-testid="ulValue">
                         <li onClick={() => changeContains('competition')}>Compétition</li>
                         <li onClick={() => changeContains('match')}>Matchs</li>
