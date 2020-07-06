@@ -12,10 +12,14 @@ const NavBar = () => {
 
     return (
         <>
-            <ul data-testid="ulValue">
-                <li onClick={() => changeContains('competition')}>Compétition</li>
-                <li onClick={() => changeContains('match')}>Matchs</li>
-            </ul>
+            <header>
+                <nav>
+                    <ul data-testid="ulValue">
+                        <li onClick={() => changeContains('competition')}>Compétition</li>
+                        <li onClick={() => changeContains('match')}>Matchs</li>
+                    </ul>
+                </nav>
+            </header>
         </>
     )
 }
