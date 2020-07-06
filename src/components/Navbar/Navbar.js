@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 
-const NavBar = () => {
+const NavBar = ({getDisplay}) => {
 
     const [displayContains, setDisplayContains] = useState({ competition: false, match: false});
 
@@ -10,6 +10,7 @@ const NavBar = () => {
         if(displayDiv === "match") setDisplayContains({competition: false, match: true});
     }
 
+    getDisplay(displayContains);
 
     return (
         <>
