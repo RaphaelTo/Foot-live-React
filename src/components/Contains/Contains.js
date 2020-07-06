@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Contains = () => {
+const Contains = ({display}) => {
+
     return (
         <>
-            <h1>hello contains</h1>
+            <div className="contain">
+                <Competion display={display.competition}/>
+                <Match display={display.match}/>
+            </div>
         </>
     )
 }
