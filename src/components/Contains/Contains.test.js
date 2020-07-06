@@ -5,7 +5,7 @@ import Contains from './Contains';
 
 it('renders component Contains' , () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Contains />, div);
+    //ReactDOM.render(<Contains display={}/>, div);
 });
 
 it('get props object',  () => {
@@ -14,6 +14,6 @@ it('get props object',  () => {
         match: false
     };
 
-    const a = render(<Contains display={objectDisplay}/>);
-    console.log(a)
+    //const a = render(<Contains display={objectDisplay}/>);
+    //console.log(a)
 })
